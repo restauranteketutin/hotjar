@@ -1,0 +1,469 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Restaurante Ketutin</title>
+</head>
+<style>
+    
+html{
+    background-color: rgb(56, 56, 56);
+}
+#nombre{
+    width: 100%;
+    height: 3em;
+    font-size: 5em;
+    font-weight: 600;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    background-image:  url("./imgs/madera.jpg");
+}
+
+#cabeceraabajo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+}
+
+#direcc, #telef{
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+a:link{
+    color: rgb(124, 146, 204);
+}
+
+a:visited{
+    color: rgb(115, 125, 153);
+}
+
+.categorias{
+    font-size: 3em;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-image:  url("./imgs/madera.jpg");
+    transition: all 1s;
+}
+
+#contenedor{
+    border: 2px solid grey;
+    margin: 2%;
+}
+
+#tituloVino{
+
+    font-size: 2em;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.menu > p{
+    font-size: 1.2em;
+   color: white;
+    
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10%;
+}
+
+
+
+@media (max-width: 600px) {
+
+    #nombre{
+    margin: auto;
+    font-size: 2.8em;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+    }
+
+    #cabeceraabajo{
+        flex-direction: column;
+
+    }
+
+    #telef{
+      font-size:   1.1em;
+      margin: 2%;
+    }
+
+    #direcc{
+        font-size:   1.1em;
+    }
+
+    .categorias{
+        font-size: 2em;
+    }
+
+    #contenedorMenu > p{
+        font-size: 1.2em;
+    }
+
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<header>
+
+    <div id="cabecera">
+
+        <div>
+            <p id="nombre">Mesón Restaurante KETUTIN</p>
+        </div>
+
+        <div id="cabeceraabajo">
+
+            <div id="direcc">
+                <address>Dirección: <a href="https://goo.gl/maps/xzSczDhSb6vVBVRCA">C/ Ricardo Ortiz 47</a> <br /> 28017
+                    Madrid</address>
+            </div>
+            <div id="telef"> Teléfono reservas: <a href=" tel: 913569124">913569124</a></div>
+
+        </div>
+
+    </div>
+</header>
+
+
+
+
+<!--  MENUUUU-->
+
+<body>
+
+    <div id="contenedor">
+        <div class="categorias" onclick="mostrar('raciones')"> Raciones </div>
+        <div id="contenedorMenuRaciones" class="menu">
+
+            <p>&nbsp; 6,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Patatas Bravas </strong></p>
+            <p>&nbsp; 6,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Torreznos </strong></p>
+            <p>&nbsp; 8,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Morcilla de Burgos </strong></p>
+            <p>&nbsp; 8,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Chichurro de Morcilla </strong></p>
+            <p> 10,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Chistorra </strong></p>
+            <p> 22,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Jamón Ibérico </strong></p>
+            <p> 22,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Lomo Ibérico </strong></p>
+            <p> 20,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Surtido de ibéricos </strong></p>
+            <p> 12,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Tomate aliñado  </strong>con ventresca y anchoas</p>
+            <p> 15,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Anchoas de Santoña </strong></p>
+            <p> 14,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Calamares Fritos frescos </strong></p>
+            <p>&nbsp; 9,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Boquerones Fritos </strong></p>
+            <p> 18,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Pulpo a la gallega </strong></p>
+            <p> 22,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Gambas plancha </strong></p>
+            <p> 20,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Gambas al ajillo </strong></p>
+            <p> 20,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Almejas </strong>(Salteadas o Marinera)</p>
+            <p> 10,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Mejillones </strong>(Vapor o Marinera)</p>
+            <p> 15,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Bonito Natural Escabechado </strong></p>
+            <p>&nbsp; 9,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Empanadillas de Bonito </strong>(1/2 docena)</p>
+            <p> 10,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Croquetas Caseras </strong></p>
+        </div>
+    </div>
+
+
+
+    <div id="contenedor">
+        <div class="categorias" onclick="mostrar('sopas')"> Sopas </div>
+        <div id="contenedorMenuSopas" class="menu">
+
+            <p>&nbsp; 7,50€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Sopa Castellana </strong></p>
+            <p>&nbsp; 7,50€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong>Caldo Gallego </strong></p>
+            <p> 12,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Fabada Asturiana </strong></p>
+            <p>&nbsp; 6,50€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Gazpacho Andaluz </strong></p>
+
+
+        </div>
+    </div>
+
+
+
+    <div id="contenedor">
+        <div class="categorias" onclick="mostrar('entrantes')"> Entradas </div>
+        <div id="contenedorMenuEntra" class="menu">
+
+            <p>12,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Tomate aliñado </strong>con ventresca y anchoas</p>
+            <p> 12,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Ensalada de perdiz escabechada </strong></p>
+            <p>&nbsp; 7,50€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Ensalada mixta </strong></p>
+            <p> 12,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Pimientos asados </strong>con ventresca</p>
+            <p> 10,50€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong>Espárragos dos salsas </strong></p>
+            <p> 12,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Habitas con jamón </strong></p>
+            <p>12,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Alcachofas con jamón</strong></p>
+            <p> 11,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Revuelto de setas </strong></p>
+            <p> 11,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Revuelto de trigueros </strong></p>
+            <p> 11,50€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Revuelto de Morcilla </strong></p>
+            <p> 14,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; Huevos rotos con <strong>Jamón y Patatas </strong></p>
+            <p> 12,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; Huevos rotos con<strong> Picadillo y Patatas </strong></p>
+
+
+        </div>
+    </div>
+
+
+
+    <div id="contenedor">
+        <div class="categorias" onclick="mostrar('espe')"> Especialidades Caseras </div>
+            <div id="contenedorMenuEspe" class="menu">
+
+                <p> 15,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Callos a la madrileña </strong></p>
+                <p> 15,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Manitas de cordero </strong></p>
+                <p> 18,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Mollejas de cordero </strong></p>
+                <p> 16,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Rabo de Toro </strong></p>
+                <p> 16,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Carrillada de ternera </strong></p>
+
+
+            </div>
+        </div>
+
+
+    <div id="contenedor">
+        <div class="categorias" onclick="mostrar('pescados')"> Pescados </div>
+        <div id="contenedorMenuPescados" class="menu">
+
+            <p> 22,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Merluza a la plancha </strong></p>
+            <p> 22,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Merluza a la Romana </strong></p>
+            <p> 22,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Cocote de Merluza </strong></p>
+            <p> 23,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Merluza a la cazuela </strong></p>
+            <p> 22,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Lenguado Plancha </strong></p>
+            <p> 23,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Rape con Almejas </strong></p>
+            <p> 22,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Rape Romana </strong></p>
+            <p> 16,50€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Bonito a la Riojana </strong></p>
+            <p> 15,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Bacalao rebozado </strong></p>
+            <p> 15,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Bonito Natural Escabechado </strong></p>
+
+
+        </div>
+    </div>
+
+
+
+    <div id="contenedor">
+        <div class="categorias" onclick="mostrar('carnes')"> Carnes </div>
+            <div id="contenedorMenuCarnes" class="menu">
+
+                <p> 42,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Chuletón de Buey </strong> S/P Kg</p>
+                <p> 23,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Paletilla de Cordero Asada </strong></p>
+                <p> 23,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Solomillo plancha </strong></p>
+                <p> 18,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Entrecot de Añojo </strong></p>
+                <p> 13,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Filete de Choto </strong></p>
+                <p> 13,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Escalope de Ternera </strong></p>
+                <p> 19,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Chuletillas de Cordero </strong></p>
+                <p> 24,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Conejo ketutín </strong> (2 Pers.)</p>
+                <p> 23,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Perdiz Escabechada </strong></p>
+                <p> 23,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Perdiz Estofada</strong></p>
+
+
+            </div>
+        </div>
+
+
+    <div id="contenedor">
+        <div class="categorias" onclick="mostrar('postres')"> Postres </div>
+        <div id="contenedorMenuPostres" class="menu">
+
+            <p> 5,50€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Flan Casero </strong></p>
+            <p> 5,50€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Natillas Caseras </strong></p>
+            <p> 5,50€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Arroz con Leche Casero </strong></p>
+            <p> 5,50€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Tarta de Santiago </strong></p>
+            <p> 6,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Tarta al Whiskey </strong></p>
+            <p> 5,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Helado </strong></p>
+            <p> 5,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Bombones helados </strong></p>
+            <p> 5,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Queso de Valladolid </strong></p>
+            <p> 5,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Fruta del tiempo </strong></p>
+
+
+        </div>
+    </div>
+
+
+    <div id="contenedor">
+        <div class="categorias" onclick="mostrar('bebidas')"> Vino </div>
+        <div id="contenedorMenuBebidas" class="menu">
+            <div id="tituloVino">Reservas y Crianzas</div>
+            <p><strong>RIBERA DEL DUERO</strong></p>
+            <p> 20,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Viña Mayor</strong></p>
+            <p> 20,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Prado Rey</strong></p>
+            <p> 32,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Arzuaga</strong></p>
+            <p> 38,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Abadía Retuerta</strong></p>
+            <p> 45,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Pago de Carraovejas</strong></p>
+            <p> 34,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Emilio Moro</strong></p>
+            <p> 45,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Malleolus</strong></p>
+            <p> 45,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Mauro </strong>Castilla y León</p>
+
+            <br/>
+
+            <p><strong> COSECHAS (RIBERA DEL DUERO)</strong></p>
+            <p> 15,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Viña Mayor</strong></p>
+            <p> 15,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Prado Rey</strong></p>
+            <p> 18,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Finca Resalso</strong></p>
+
+            <br/>
+
+            <p><strong> RIOJAS CRIANZAS</strong></p>
+            <p> 18,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Glorioso</strong></p>
+            <p> 18,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Montecillo</strong></p>
+            <p> 22,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Campiño Crianza</strong></p>
+
+            <br/>
+
+            <p><strong> RIOJAS RESERAS</strong></p>
+            <p> 28,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Ramón Bilbao </strong></p>
+            <p> 38,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Viña Ardanza</strong></p>
+           
+            <br/>
+
+            <p><strong> ROSADOS</strong></p>
+            <p> 18,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Hito Especial</strong></p>
+            <p> 12,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Peñascal</strong></p>
+            <p> 12,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Gran Feudo</strong></p>
+
+            <br/>
+
+            <p><strong> BLANCOS DE RUEDA</strong></p>
+            <p> 18,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Cuarenta Vendimias</strong></p>
+            <p> 16,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Ramón Bilbao</strong></p>
+            <p> 16,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Viña Mocen</strong></p>
+
+            <br/>
+
+            <p><strong> MAGNUM RIBERA DEL DUERO Y RIOJA</strong></p>
+            <p> 26,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Prado Rey</strong></p>
+            <p> 58,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Arzuaga</strong></p>
+            <p> 52,80€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Ramón Bilbao Reserva</strong></p>
+            <p> 35,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Finca Resalso</strong></p>
+            <p> 85,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Pago de Carraovejas</strong></p>
+
+            <br/>
+
+            <p><strong> CAVAS</strong></p>
+            <p> 28,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Anna de Codorniu</strong></p>
+            <p> 48,00€ &nbsp; &nbsp; &#8211; &nbsp; &nbsp; <strong> Juve Camps</strong></p>
+
+
+
+        </div>
+    </div>
+
+<!---
+    <div id="contenedor">
+        <div class="categorias" onclick="mostrar('menus')"> Menu </div>
+        <div id="contenedorMenuMenus" class="menu">
+
+            <p> 10,50€ &#8211; <strong> Bacalao a la riojana</strong></p>
+
+        </div>
+    </div>
+-->
+
+</body>
+
+<script>
+
+    var raciones = document.getElementById("contenedorMenuRaciones");
+    var sopas = document.getElementById("contenedorMenuSopas");
+    var entrantes = document.getElementById("contenedorMenuEntra");
+    var espe = document.getElementById("contenedorMenuEspe");
+    var pescados = document.getElementById("contenedorMenuPescados");
+    var carnes = document.getElementById("contenedorMenuCarnes");
+    var postres = document.getElementById("contenedorMenuPostres");
+    var bebidas = document.getElementById("contenedorMenuBebidas");
+    //var menus = document.getElementById("contenedorMenuMenus");
+    
+
+
+  
+  document.addEventListener("DOMContentLoaded", ocultarTodo());
+
+    function ocultarTodo(){
+        raciones.style.display="none";
+        sopas.style.display="none";
+        entrantes.style.display="none";
+        espe.style.display="none";
+        pescados.style.display="none";
+        carnes.style.display="none";
+        postres.style.display="none";
+        bebidas.style.display="none";
+      //  menus.style.display="none";
+    }
+
+    function mostrar(menu) {
+
+        if(menu=="raciones" && raciones.style.display=="none"){
+            raciones.style.display="block";
+            raciones.style.transition="all 1s";
+        }else if(menu=="raciones" && raciones.style.display=="block"){
+            raciones.style.display="none";
+
+        }else if(menu=="entrantes" && entrantes.style.display=="none"){
+            entrantes.style.display="block";
+        }else if(menu=="entrantes" && entrantes.style.display=="block"){
+            entrantes.style.display="none";
+            
+        }else if(menu=="sopas" && sopas.style.display=="none"){
+            sopas.style.display="block";
+        }else if(menu=="sopas" && sopas.style.display=="block"){
+            sopas.style.display="none";
+            
+        }else if(menu=="espe" && espe.style.display=="none"){
+            espe.style.display="block";
+        }else if(menu=="espe" && espe.style.display=="block"){
+            espe.style.display="none";
+            
+        }else if(menu=="pescados" && pescados.style.display=="none"){
+            pescados.style.display="block";
+        }else if(menu=="pescados" && pescados.style.display=="block"){
+            pescados.style.display="none";
+            
+        }else if(menu=="carnes" && carnes.style.display=="none"){
+            carnes.style.display="block";
+        }else if(menu=="carnes" && carnes.style.display=="block"){
+            carnes.style.display="none";
+            
+        }else if(menu=="postres" && postres.style.display=="none"){
+            postres.style.display="block";
+        }else if(menu=="postres" && postres.style.display=="block"){
+            postres.style.display="none";
+            
+        }else if(menu=="bebidas" && bebidas.style.display=="none"){
+            bebidas.style.display="block";
+        }else if(menu=="bebidas" && bebidas.style.display=="block"){
+            bebidas.style.display="none";
+            
+      /*  }else if(menu=="menus" && menus.style.display=="none"){
+            menus.style.display="block";
+        }else if(menu=="menus" && menus.style.display=="block"){
+            menus.style.display="none";
+        */}
+        
+
+       
+
+    }
+
+</script>
+
+
+</html>
